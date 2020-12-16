@@ -1,0 +1,53 @@
+main,
+#content {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+section {
+  width: 100%;
+}
+
+main img {
+  width: 500px;
+  height: 300px;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.redNuber {
+  color: red;
+  font-weight: bold;
+}
+
+pre {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-left: 3px solid #3cb878;
+  color: #bd4147;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  max-width: 100%;
+  overflow: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  word-wrap: break-word;
+  white-space: pre;
+  display: inline-block;
+}
+
+.table {
+  width: 50%;
+}
+
+#logo {
+  padding: 1.6%;
+  text-align: center;
+  border-bottom: 2px solid #3cb878;
+  margin-bottom: 1.6%;
+}

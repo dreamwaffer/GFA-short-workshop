@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knowledge Base</title>
+    <!-- Bootstrap CSS -->
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+            integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/default.min.css">
+    <link rel="stylesheet" href="assets/styles/kb-styles.css">
+</head>
+<body>
+<header>
+        <section id="logo">
+                <img
+                        src="assets/green_fox_logo_full.svg"
+                        width="200"
+                        alt="green fox logo"
+                />
+            </section>
+            <section id="content">
+    <h1>Knowledge Base</h1>
+    <p>
+        This is a knowledge base with all the information mentioned during Green Fox Academy Workshop.
+    </p>
+    <h2>Table of contents:</h2>
+    <ul>
+        <a href="#platform">
+            <li>CodeSandbox and our platform</li>
+        </a>
+        <a href="#javascript">
+            <li>Javascript</li>
+        </a>
+        <a href="#ourConsole">
+            <li>Our console</li>
+        </a>
+        <a href="#jsConsole">
+            <li>JavaScript console</li>
+        </a>
+        <a href="#basics">
+            <li>Basics</li>
+        </a>
+        <a href="#comments">
+            <li>Comments</li>
+        </a>
+        <a href="#variables">
+            <li>Variables</li>
+        </a>
+        <a href="#colors">
+            <li>Colors</li>
+        </a>
+        <a href="#conditions">
+            <li>Conditions</li>
+        </a>
+        <a href="#loops">
+            <li>Loops</li>
+        </a>
+        <a href="#drawing">
+            <li>Drawing</li>
+        </a>
+        <a href="#functions">
+            <li>Functions</li>
+        </a>
+        <a href="#events">
+            <li>Events</li>
+        </a>
+    </ul>
+</section>
+</header>
+
+<main>
+    <section id="platform">
+        <h2>CodeSandbox and our platform</h2>
+        <p>To save you some work, so you don't have to download and install an IDE (Integrated Development Environment),
+            we use <a href="https://codesandbox.io">CodeSandbox</a>, which is an online development environment
+            that you can use for smaller projects. It comes with a lot of good features. Generally speaking IDE is a
+            place/program/application where you can create your code and develop a website or an app.</p>
+        <h3>How to get your own development environment</h3>
+        <p>On this <a href="https://codesandbox.io/s/gfa-workshop-nuhky">link</a> you can find a ready-made development
+            environment that we use in our Green Fox Academy Workshops. To be able to work on your own version of our
+            project, it is important to create your own copy. In the top bar, it is the fourth button from the right -
+            the FORK button. When you click on it, you will create your own copy of this environment.
+        </p>
+        <img src="Fork.png" alt="How to fork our project">
+        <h3>Development environment</h3>
+        <p>If you successfully created your own copy of our project. You should see something like this:</p>
+        <img src="Environment.png" alt="Development environment">
+        <p>The <span class="redNuber">1.</span> box is your project file system. If you want to work on specific task
+            firsly open the workshop folder, then
+            open the <code>script.js</code> file inside a folder with the number of the task and put your code
+            inside. Do not change other files in our project as it might result in your copy not working at all. If this
+            for some reason happens just create a new one.
+
+            The <span class="redNuber">2.</span> box is where you should write your code. You can find a lot of hints
+            there to help you solve the tasks, but you can also always get back to this knowledge base to learn
+            something new. Do not forget to save your work with <code>ctrl+s</code> (the cursor must be in the code
+            section). If you don't save your work regularly you might delete it by refreshing the whole page.
+
+            The <span class="redNuber">3.</span> box is small browser, where you can see your project immediately.
+            We have prepared a project for you, which you can take as your portfolio of the first small steps in
+            programming. You can see what the home page of this environment looks
+            like in the small browser on the right. Here you can find links to your solutions. Simply select the
+            exercise you want to view and click on it. You can then return to the menu by pressing the back button (if
+            you are directly on the web), or by clicking the refresh button in a small browser (if you are in the code
+            sandbox). If necessary, just copy the link and hit enter.
+        </p>
+        <h3>Platform problems</h3>
+        <p>Nothing is perfect, neither is this online IDE. From time to time you might see an error in the mini browser.
+            In that case just save your work with <code>ctrl+s</code> (the cursor must be in the code section) and
+            refresh the page. The reason for this error is a bundler CodeSandbox uses. </p>
+    </section>
+
+    <section id="javascript">
+        <h2>JavaScript</h2>
+        <p>This language can be found mainly in web development. You've probably heard of HTML and CSS before. HTML is
+            the markdown code that we use to create web pages. It is only a static skeleton of the content, for example
+            what is the title, what is the text, image, etc. A good analogy is that HTML can be seen as a dummy (plastic
+            model of a person used in clothes shop for showing clothes). CSS adds styles to our HTML, with the help of
+            CSS we can add colors, layout, etc. to our page. If the HTML is a dummy, then CSS is the clothes we put on
+            it. And finally here's the javascript, it will help us add a little dynamics to our site. Animation, dynamic
+            layout, etc. With Javascript, our dressed dummy changes into a dressed man who can move. JavaScript is a
+            so-called interpreted language, which means that the interpreter that is built into your browser understands
+            the individual commands that you write in the code.
+        </p>
+        <p>Learn more about JavaScript from the official
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">documentation</a></p>
+    </section>
+
+    <section id="ourConsole">
+        <h2>Our console</h2>
+        <p>To try basic concepts of JavaScript, you can use our Console. Just open the console <code>script.js</code>
+            inside the folder number 1. There are two methods you can use to work with our console. First is <code>print(text)</code>
+            to print something to a console. It can be either text (string) or a number. Second method is
+            <code>clear()</code> to clear the console. Once you learn more about conditions, loops and functions get
+            back to this console and try these concepts out.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+let number = 23;
+let text = "Green Fox Academy is a coding bootcamp in Prague.";
+print(number);
+print(text);</code>
+        </pre>
+    </section>
+
+    <section id="jsConsole">
+        <h2>JavaScript Console</h2>
+        <p>Our console is very basic, but you can try out most of the concepts covered in Green Fox Academy Workshop
+            with it. If you want to print more interesting stuff (objects, arrays, etc.) you need to use JavaScript
+            console. You can open this console by pressing <code>ctrl+shift+j</code> on Windows or <code>command+option+j</code>
+            on Mac. Alternatively, right-click somewhere in your webpage and "inspect element". You should see something
+            like this:
+        </p>
+        <img src="Console.png" alt="JavaScript console">
+        <p>In case you don't just find the right tab (Console). Here you can do pretty much the same as in CodeSandbox -
+            create variables, add/substract them, work with conditions, loops, functions and a lot more. It is just not
+            that comfortable. So the real reason for using JavaScript console is <code>console.log()</code>. With this
+            method we can log anything to our console. It can be truly anything - number, text (string), object, array,
+            HTML element, etc.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+let number = 23;
+let text = "Green Fox Academy is a coding bootcamp in Prague.";
+let array = [23,68,24,34,33,77,12];
+let car = {type:"Fiat", model:"500", color:"white"};
+console.log(number);
+console.log(text);
+console.log(array);
+console.log(car);</code>
+        </pre>
+        <p>You can also open console directly in CodeSandbox, just click on console below the small browser.</p>
+    </section>
+
+    <section id="basics">
+        <h2>Basics</h2>
+        <p>These informations are related to part 2 - Basics. Open the folder 2 in workshop folder.</p>
+        <h3>fillRect()</h3>
+        <p>In the <code>script.js</code> file you can see one function called <code>draw()</code>, at this moment we
+            don’t really
+            care about what exactly that means. Let's first take a look at what is written inside this function.</p>
+        <pre>
+            <code>
+export function draw(c) {
+    c.fillRect(20,20,200,150);
+}</code>
+        </pre>
+        <p>
+            As the name suggests, this function draws a rectangle on the canvas. The
+            letter c before the function is the name of the object that can draw on the canvas. The dot is a
+            „connector“. In the language of programmers, this would mean something like: "I call the fillRect function
+            on object c.“ Numbers in brackets are called parameters or arguments. Please note the semicolon at the end
+            of the line. When the interpreter sees this semicolon it recognise that the line no longer continues. It's
+            the same as the dot at the end of the sentence. When I change the value to:
+        </p>
+        <pre>
+            <code>
+export function draw(c) {
+    c.fillRect(200,100,300,50);
+}</code>
+        </pre>
+        <p>The rectangle shifts and resizes. You should now be able to determine what each number means. The first of
+            these (200) is the number of pixels from the left edge, ie where we want to start our rectangle on the
+            x-axis. The second of them (100) is the number of pixels from the top edge, ie where we want to start our
+            rectangle on the y-axis. The third number is the width of the rectangle and the fourth is its height. It's
+            important to realize that these axes are a little different then what we remember from math classes. In
+            mathematics, the point [0,0] is located in the lower left corner. However, in the IT world, this point is in
+            the upper left corner.
+        </p>
+        <h3>StrokeRect()</h3>
+        <p>There are other methods we can use when painting on canvas. The <code>strokeRect()</code> method draws only
+            the outline of the rectangle.
+        </p>
+        <pre>
+        <code>
+export function draw(c) {
+    c.strokeRect(200, 200, 300, 50);
+}</code>
+    </pre>
+        <p>What about adding some colors? Use this command to change the color of drawing objects.</p>
+        <pre>
+            <code>
+export function draw(c) {
+    c.fillStyle = "red";
+    c.strokeStyle = "blue";
+}</code>
+        </pre>
+        <p>FillStyle and strokeStyle are not functions of object c, but its attributes. And we can assign a value to the
+            attribute. In our case, it will be the name of the color in English. You can try any color that comes to
+            your mind. Eg: pink, purple, crimson, salmon.</p>
+    </section>
+
+    <section id="comments">
+        <h2>Comments</h2>
+        <p>In programming languages we have the opportunity to add comments to our code. This makes easier to understand
+            complicated parts or for example to add notes during learning. Commented lines start with <code>//</code> or
+            placed
+            between <code>/*</code> and <code>*/</code>. The commented code won't get executed, it is only for the
+            reader.</p>
+        <pre>
+            <code>
+// this is an inline comment, the browser will ignore it
+
+/*
+    this is a multiline comment
+    the browser will ignore the whole block
+*/</code>
+        </pre>
+    </section>
+
+    <section id="variables">
+        <h2>Variables</h2>
+        <p>Now we are going to get familiar with variables, types and operators. These are the really fundamentals in
+            programming languages, not only in JavaScript, however their usage or syntax can slightly vary.</p>
+        <h3>Declaration</h3>
+        <p>A variable is a piece of memory where we can store a value. It is name-value pair and can be defined/declared
+            with several different keywords. In Green Fox Academy Workshop we use the keyword <code>let</code>.</p>
+        <pre>
+            <code>
+let variable;
+let otherVariable;</code>
+        </pre>
+        <p>Above we have created two variables, their names are variable and otherVariable respectively. Currently they
+            have no value assigned. If you want to a assign a value to your variable, you will need to use the =
+            operator:</p>
+        <pre>
+            <code>
+let number = 5;
+let name = "Fox";</code>
+        </pre>
+        <p>Let's break it down now. The word let denotes a variable, followed by the name of the variable, then the =
+            sign means that we want to store a value in this variable. The value depends on what is behind the
+            equal sign. We can store many things in variables, more about this topic can be found <a
+                    href="#types">here</a>.
+            It is good practice to name variables in a way that makes sense. The variable name should
+            describe what the variable is used for.</p>
+        <p><strong>Important:</strong> If you try to declare two variables with the same name (redeclaration), then you
+            will get an
+            error. In this case you need to ignore the let keyword for the second time or use another variable name.</p>
+        <p>After a variable has been declared you can change its value any time with the = sign:</p>
+        <img src="variables.png" alt="variables showcase">
+        <p><strong>Extra info:</strong> You can use <code>const</code> and <code>var</code> for variable declarations
+            and all these 3 behaves differently. <code>let</code> is perfectly enough for us now, but you can read about
+            them in the
+            most referenced <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#Declarations">documentation</a>,
+            maintained by Mozilla and the community.</p>
+
+        <h3 id="types">Types</h3>
+        <p>Now after we know what are variables, lets examine what can be their values. As we've seen earlier, we have
+            numbers for example. Is this enough for us? Nope, except if we want to create a calculator, but as the
+            application gets more complicated we will need more types. In JavaScript we have 7 different primitive
+            (basic) data types, but we will learn about only 3 of them:
+        <ul>
+            <li><a href="#number"><strong>number:</strong></a> any number, both integer and rational numbers</li>
+            <li><a href="#string"><strong>string:</strong></a> they represents any text or a single character</li>
+            <li><a href="#boolean"><strong>boolean:</strong></a> it has two values true or false</li>
+        </ul>
+        </p>
+        <h4 id="boolean">Boolean</h4>
+        <p>Lets start with the simplest type, Boolean. It is a pretty common type and we have it in almost every
+            language. It has only two values <code>true</code> or <code>false</code>.</p>
+        <pre>
+            <code>
+let myBoolean = true;
+let myOtherBoolean = false;</code>
+        </pre>
+        <h5>Logical operators</h5>
+        <p>Operators which can be used with boolean values are called <code>logical operators</code> the most common
+            ones are <code>or (||)</code> and <code>and (&&)</code>. We consider these operators binary operators as
+            they work with two values. There is also unary operators <code>not (!)</code>.</p>
+        <p>To understand the <code>logical and operator</code> we can use a table</p>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>value1</th>
+                <th>value2</th>
+                <th>result</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>true</td>
+                <td>true</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>true</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>false</td>
+                <td>true</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>So in a nutshell <code>logical and</code> will result true only if both values are true</p>
+        <pre>
+            <code>
+let result = true && true;
+// result equals to true
+
+let result2 = true && false;
+//result2 equals to false</code>
+        </pre>
+        <p><code>Logical or</code> is pretty similar to the and, but its result is always true if at least one operand
+            is true.</p>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>value1</th>
+                <th>value2</th>
+                <th>result</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>true</td>
+                <td>true</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>true</td>
+                <td>false</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>false</td>
+                <td>true</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+            </tbody>
+        </table>
+        <pre>
+            <code>
+let result = true || true;
+// result equals to true
+
+let result2 = true || false;
+//result2 equals to true
+
+let result3 = false || false || true || false;
+// result3 equals to true
+
+let result4 = false || false;
+// result4 equals to false</code>
+        </pre>
+        <p><code>not</code> is a unary operator which means it has only one operand. It simply negates the value.</p>
+        <pre>
+            <code>
+let result = !true;
+// result equals to false
+
+let result2 = !false
+// result2 equals to true</code>
+        </pre>
+        <p>What do you think what will be the result of <code>!!true</code>? Lets try it and find out why did you get
+            that result.</p>
+        <h5>Assignement operators</h5>
+        <p>With the <code>equals operator (===)</code> you can check if the operands are equals or not. This operator
+            can be used with all the other types but will always result a boolean.</p>
+        <pre>
+            <code>
+let result = true === true;
+// result equals to true
+
+let result2 = true === false;
+// result2 equals to false
+
+let result3 = false === false;
+// result3 equals to true
+
+let result4 = 5 === 5;
+// result4 equals to true</code>
+        </pre>
+        <p><strong>Important:</strong> there is another equals operator <code>==</code> which works almost the same way,
+            but in some cases they will have different result. As a good practice we encourage everybody to use the
+            triple variant.
+        </p>
+        <p>The <code>not equals operator (!==)</code> is the counterpart of the equals, you can check with it whether
+            two values are different or not.</p>
+        <pre>
+            <code>
+let result = true !== true;
+// result equals to false
+
+let result2 = true !== false;
+// result2 equals to true
+
+let result3 = 1 !== 2;
+// result3 equals to true</code>
+        </pre>
+        <h4 id="number">Numbers</h4>
+        <p>Numbers represents anything between <code>-Infinity</code> and <code>Infinity</code> and you can do any
+            operation with them what you already did in the elementary school.</p>
+        <p><strong>Extra info:</strong> Some languages have specific types for rational numbers but in JavaScript there
+            is only number, regardless to its value.</p>
+        <h5>Mathematical operators</h5>
+        <p>Just like in math you can do different operations with numbers. Most of them you know from your elementary
+            school times.
+        <ul>
+            <li>Addition <code>+</code></li>
+            <li>Substraction <code>-</code></li>
+            <li>Multiplication <code>*</code></li>
+            <li>Division <code>/</code></li>
+            <li>Modulo <code>%</code></li>
+        </ul>
+        The first three of these operators <code>(+,-,*)</code> work as you expect them to work. You can try in out in a
+        console.
+        </p>
+        <pre>
+            <code>
+let addition = 5 - 6;
+// addition equals to -1
+
+let substraction = 5 - 6;
+// substraction equals to -1
+
+let multiplication = 5 * 6;
+// multiplication equals to 30</code>
+        </pre>
+        <p>Division is almost the same too, but there is a slight difference. In math, you cannot divide by zero. In
+            JavaScript you can get a strange result.</p>
+        <pre>
+            <code>
+let result = 10 / 4;
+// result is 2.5
+
+let result2 = 10 / 0;
+// result2 is Infinity</code>
+        </pre>
+        <p>Modulo is less known but we do have it in math too. With modulo you can get the reminder of a division. It is
+            quite important operator in programming world.</p>
+        <pre>
+            <code>
+let reminder = 5 % 3;
+//reminder is 2;</code>
+        </pre>
+        <h4 id="string">Strings</h4>
+        <p>Strings represents any text or character in programming languages, you just need to use quotation marks such
+            as <code>'</code> or <code>"</code>.</p>
+        <pre>
+            <code>
+let myString = 'This is a string';
+let anotherString = "This is also a string";</code>
+        </pre>
+        <p>We have a special form of strings as well, called <code>string template literal</code>. We use them, when we
+            want to make something dynamic. For this you will need to use some more special characters:</p>
+        <pre>
+            <code>
+let name = 'Mark';
+let greeting = `Hello ${name}!`;
+// greeting equals to "Hello Mark!"</code>
+        </pre>
+        <p><strong>Important:</strong> Mind the special characters, we used the backtick <code>`</code> instead of
+            simple quotation marks and surrounded the variable with ${...}</p>
+        <h5>Operators</h5>
+        <p>There are several operation what can be performed on strings but we will focus only on two of them. First of
+            them is <code>concatenation (+)</code> and second is <code>.length</code> operator.</p>
+        <p>With the <code>+</code> sign you can append/concatenate a string to another.</p>
+        <pre>
+            <code>
+let greetWorld = 'Hello ' + 'World!';
+//greetWorld equals to "Hello World!"
+
+let name = 'Dave';
+let greeting = 'Hello ' + name + '!';
+// greeting equals to "Hello Dave!"</code>
+        </pre>
+        <p><strong>Important:</strong> As you can see the result is the same as with <code>string template
+            literals</code>, these
+            template literals are pretty new in JavaScript and preferred over the concatenation.</p>
+        <p>Strings in JavaScript have a property, called <code>length</code>. With this property you can get the count
+            of characters in the string.</p>
+        <pre>
+            <code>
+let charCount = 'Hello'.length;
+// charCount equals to 5</code>
+        </pre>
+    </section>
+
+    <section id="colors">
+        <h2>Colors</h2>
+        <p>Having only black and white drawing can be kind of boring. We can change the color of our future drawings by
+            changing the property <code>strokeStyle</code> or <code>fillStyle</code>. These properties belong to the
+            context <code>c</code> defined in <code>canvas</code>. The default color is black, once you change the color
+            all of the next drawings are using this color, untill you change it again. <code>strokeStyle</code> changes
+            the color of the outline of a rectangle. <code>fillStyle</code> changes the fill color. We can simply use
+            the english names of colors. The list of possible colors is really long.</p>
+        <pre>
+            <code>
+// This rectangle is going to be black
+c.fillRect(50,50,100,100);
+
+// Now we change the color to red
+c.fillStyle = "red";
+// This one is going to be red
+c.fillRect(50,50,100,100);
+
+// Same for just the outline (stroke)
+c.strokeRect(50,50,100,100);
+c.strokeStyle = "red";
+c.strokeRect(50,50,100,100);</code>
+        </pre>
+        <h3>RGB notation</h3>
+        <p>The list of colors whose names we can use right away is long enough, but it certainly lacks some colors.
+            There is another way how we can represent a color in JavaScript - RGB. RGB color values are supported in all
+            browsers. An RGB color value is specified with: <code>rgb(red, green, blue)</code>. Each parameter (red,
+            green, and blue) defines the intensity of the color as an integer between 0 and 255. For example, rgb(0, 0,
+            255) is rendered as blue, because the blue parameter is set to its highest value (255) and the others are
+            set to 0.
+        </p>
+        <pre>
+            <code>
+// Setting color to red
+c.fillStyle = "rgb(255,0,0)";
+
+// Setting color to blue
+c.fillStyle = "rgb(0,255,0)";
+
+// Setting color to green
+c.fillStyle = "rgb(0,0,255)";
+
+// Setting color to purple - 50% of red, 0% of green and 50% of blue
+c.fillStyle = "rgb(128,0,128)";</code>
+        </pre>
+        <h3>RGBA notation</h3>
+        <p>In addition to RGB notation, we can also use RGBA notation, the last parameter indicates the opacity of
+            the object. Value <code>1</code> means opacity and value <code>0</code> means absolute transparency.</p>
+        <pre>
+            <code>
+// Red color with 50% opacity
+c.fillStyle = "rgba(255,0,0,0.5)</code>
+        </pre>
+        <p>Because both of these notations are strings we can create them using <code>string template literal</code> or
+            <code>concatenation</code> and include some variables.</p>
+        <pre>
+            <code>
+let opacity = 0.1;
+c.fillStyle = `rgba(0,0,0, ${opacity * 3})`;</code>
+        </pre>
+    </section>
+
+    <section id="conditions">
+        <h2>Conditions</h2>
+        <p>You can make a piece of your code optional, with the if statement. It lets you define a condition which your
+            code depends on</p>
+        <pre>
+            <code>
+let myVariable = false;
+if (myVariable === true) {
+    console.log('The condition has been evaluated to true');
+}</code>
+        </pre>
+        <p>If you run the above code in the console or in a webpage you will see nothing in the console. Please change
+            something to see the desired message in the console</p>
+        <p>Our if statement gives us more capabilities, we can tell what we want to do if the given condition has been
+            evaluated to false.</p>
+        <pre>
+            <code>
+let a = 7;
+if (a < 5) {
+    console.log(a / 2);
+} else {
+     console.log(a * 2);
+}</code>
+        </pre>
+        <p>You can read more about the if statement in the <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if…else">documentation</a>.
+        </p>
+    </section>
+
+    <section id="loops">
+        <h2>Loops</h2>
+        <p>Sometimes you want to execute a piece of code several times. Like in the real life when you want to move
+            books from one shelf to another.
+        <ul>
+            <li>you grab the book</li>
+            <li>you move it to the other shelf</li>
+            <li>you release the book</li>
+        </ul>
+        And you do this until you have no books to move. For example if you have 10 books:
+        </p>
+        <pre>
+            <code>
+let bookCount = 10;
+
+for (let i = 0; i < bookCount; i++) {
+    // here comes the code which moves the books
+    // this block will be repeated bookCount times
+}</code>
+        </pre>
+        <p>For indicates the beginning of a new for-loop, followed by the initialization of the variable i, the
+            condition, and the change of the variable. The most important part of for-loop for us is the condition. If
+            the condition is true, the commands in curly brackets are going to be executed.</p>
+        <p>Printing the number of current book is also fairly easy. We call the number of a loop (book in our case) an
+            index</p>
+        <pre>
+            <code>
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}</code>
+        </pre>
+        <p>We already know what parts the for-loop consists of. But what exactly that change part means?</p>
+        <pre>
+            <code>
+let i = 0;
+// These 3 statements means exactly the same - addition of 1 to current value of i
+i++;
+i=i+1;
+i+=1;
+
+// Same with substraction
+i--;
+i=i-1;
+i-=1;
+
+// If we want to add more then one, then there are only 2 options
+i+=10;
+i=i+10;
+i-=10;
+i=i-10;</code>
+        </pre>
+    </section>
+
+    <section id="drawing">
+        <h2>Drawing</h2>
+        <p>We already know how to draw a rectangle or its outline. We can also draw any other shape by drawing single
+            lines. Following example will draw a triangle.</p>
+        <pre>
+            <code>
+export function draw(c) {
+    c.beginPath();
+    c.moveTo(100, 30);
+    c.lineTo(150, 115);
+    c.lineTo(50, 115);
+    c.lineTo(100, 30);
+    c.stroke();
+    c.fill();
+}</code>
+        </pre>
+        <p>Imagine that there is an invisible hand that draws on the canvas for you. We have to start drawing with the
+            <code>beginPath</code> function, which wakes the invisible hand to life. With the <code>moveTo</code>
+            function we can move the hand to a specific place. Finally, the invisible hand begins to draw with invisible
+            ink on the canvas with the<code>lineTo</code> function. Once it's done, we call the <code>stroke</code>
+            function and the ink appears. This is how we can draw a triangle. Using the <code>fill</code> method instead
+            of the <code>stroke</code> method, we can fill the object with color, but only if the object is closed.
+        </p>
+    </section>
+
+    <section id="functions">
+        <h2>Functions</h2>
+        <p>Usually there are many repeating code blocks in an application, when we want to execute the same code but
+            with different circumstances/environments. Just imagine how you pay your bills. The steps are the same you
+            just transfer different amount to different bank accounts. So the amount and the bank account are parameters
+            of this activity. In programming languages these activities are called functions.</p>
+        <pre>
+            <code>
+function payBill(amount, beneficiary) {
+    // transfer amount money to the beneficiary
+};</code>
+        </pre>
+        <p>Within functions you can use the return keyword which will give back the function's output. For example if
+            you want to add 2 numbers, then you will need the result as well:</p>
+        <pre>
+            <code>
+function add(a, b) {
+    return a + b;  // the return keyword will give you back the result
+};
+
+console.log(add(1, 2)) // will print 3</code>
+        </pre>
+        <p>Another example of function for drawing a square. Squares are rectangles with width being equal to
+            height.</p>
+        <pre>
+            <code>
+export function draw(c) {
+    function strokeSquare(left, top, size) {
+        c.strokeRect(left, top, size, size);
+    }
+    strokeSquare(100,100,200);
+}
+</code>
+        </pre>
+        <p>
+            The keyword function means that we are starting to declare a new function. This is followed by the name of
+            this function, its parameters in brackets, and the body of the function in curly brackets. In our case we
+            want to draw squares, 3 parameters are enough for that. <code>left</code> - how much from the left edge.
+            <code>top</code> - how much from the top edge. <code>size</code> - what should be the size of the square. In
+            the body of the function, we only pass these parameters to the already known strokeRect function.</p>
+    </section>
+
+    <section id="events">
+        <h2>Events</h2>
+        <p>So far you can draw on canvas with the help of variables, conditions and loops. With the help of HTML and CSS
+            you can create nice dynamic website. This sounds cool, but still not enough. The user might want to interact
+            with your webpage. Do actions like clicking on a button, save some data during sign up or simply like/share
+            some content. This is where we will need the events. Events are actions made by the user and we want to
+            respond to them
+            somehow. Let's see how events work on an example. We want to create a program that will draw foxes on the
+            canvas when moving the mouse over the canvas. To do this, we will need a method for drawing foxes. Let the
+            method be:</p>
+        <pre>
+            <code>
+export function draw(c) {
+    function drawFox(x, y) {
+        let size = 20;
+
+        c.beginPath();
+        c.moveTo(x, y);
+        c.lineTo(x+size/7*2, y-size/7*3);
+        c.lineTo(x+size/7*3, y-size/7);
+        c.lineTo(x+size/7*4, y-size/7);
+        c.lineTo(x+size/7*5, y-size/7*3);
+        c.lineTo(x+size, y);
+        c.lineTo(x+size/2, y+size/7*3);
+        c.lineTo(x, y);
+        c.fill();
+    }
+}</code>
+        </pre>
+        <p>We have a method, now we have to tell JavaScript when to use this method. First, we select the part of the
+            screen that contains our canvas. In HTML we can find that this part uses an <code>id</code> named canvas.
+        </p>
+        <pre>
+            <code>
+let canvas = window.document.getElementById("canvas");</code>
+        </pre>
+        <p>Now we need to add event listener to this canvas.</p>
+        <pre>
+            <code>
+canvas.addEventListener('mousemove', function(e) {
+    // Here we will put the code that is going to be executed, when the event is triggered
+});</code>
+        </pre>
+        <p>To this function we can add whatever we want to happen if the mouse is moved. This is the reason of the name
+            of this event – <code>mousemove</code>.</p>
+        <pre>
+            <code>
+canvas.addEventListener("mousemove", function (e) {
+    drawFox(e.clientX, e.clientY);
+});
+</code>
+        </pre>
+        <p><code>e.clientX</code> and <code>e.clientY</code> are coordinates of the mouse when the event happened. Full
+            code of this example can be found in part 10 of the workshop.</p>
+    </section>
+</main>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"
+></script>
+</body>
+</html>

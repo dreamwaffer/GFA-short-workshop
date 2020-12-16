@@ -1,0 +1,70 @@
+header {
+  padding: 1.6%;
+  text-align: center;
+  border-bottom: 2px solid #3cb878;
+  margin-bottom: 1.6%;
+}
+
+section {
+  text-align: center;
+  width: 100%;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #3cb878;
+}
+
+.numberCircle {
+  width: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  border: 2px solid #666;
+}
+
+.teaching {
+  text-align: center;
+  border: 10px solid transparent;
+  border-radius: 20px;
+}
+
+a,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.teaching:hover {
+  color: inherit;
+  text-decoration: none;
+  /*border: 10px solid #3cb878;
+  border-radius: 20px;*/
+  box-shadow: 0px 0px 10px 5px rgba(170, 164, 164, 0.67);
+  transition: box-shadow 0.3s;
+}
+
+.teaching img {
+  width: 100%;
+  height: 50%;
+}
+
+#console {
+  font-family: "Ubuntu Mono", monospace;
+  width: 60%;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  color: rgb(0, 255, 34);
+  border: 5px solid darkslategray;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+}
+
+#console p {
+  margin: 0;
+}
